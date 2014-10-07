@@ -1,36 +1,35 @@
 body{
-    background-color: #234465;
+    background-color: #EEEEEE;
     margin:0;
-    font-size: 2em;
     padding: 0;
-    color: #ffffff;
+    color: #000000;
 }
 .wrapper{
-    height: 75px;
+    width: 80%;
+    margin:0 auto;
+}
+.clearfix{
+    height: 70px;
     background-color: #183046;
-    width: 100%;
-    position: absolute;
 }
 #main-nav{
-    padding-top: 15px;
-    width: 70%;
-    margin: 0 auto;
-    height: 35px;
-;
+    font-size: 1.7em;
+    height: 70px;
+    background-color: #183046;
 }
     .logo{
         float: left;
         color: #ffffff;
-        font-size: 1.5em;
+        font-size: 1em;
 
     }
         .logo img{
-            width: 175px;
+            width: 278px;
         }
 
         .nav-items{
             float: right;
-            margin-top: -26px;
+            margin-top: -7px;
         }
          .nav-items ul li {
              margin-right: 20px;
@@ -42,10 +41,45 @@ body{
             margin-right: 20px;
             list-style: none;
             float: left;
-                border-bottom: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
             }
             .nav-items ul li a{
                 color: #ffffff;
                 text-decoration: none;
             }
 
+div.post{
+    margin-top: 30px;
+    padding: 20px;
+    width: 60%;
+    border-bottom: 2px solid #000000;
+}
+
+    span.post-title {
+        font-size: 2em;
+        font-style: italic;
+        font-weight: bold;
+    }
+    .post-footer{
+        font-size: 1em;
+        color: #232323;
+    }
+
+    div.image{
+        width: 100%;
+        margin-top:30px;
+        height: 100%;
+    }
+
+    div.image img{
+        width: 100%;
+    }
+
+    #buttom-footer{
+        color: #ffffff;
+        text-align: center;
+        margin-top:30px;
+        padding: 20px;
+        height: 100px;
+        background-color: #333333;
+    }
