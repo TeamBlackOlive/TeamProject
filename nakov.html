@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="playSound.js"></script>
+    <audio src="imgs/sounds/azis.wav" type="audio/ogg" id="sound"></audio>
+    <audio src="imgs/sounds/angry.wav" type="audio/ogg" id="angry"></audio>
+
+
+    <!-- jQuery include -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <!-- freezeframe include -->
+    <script type="text/javascript" src="freezeframe.js"></script>
+    <!-- freezeframe options -->
+    <script type="text/javascript">
+        freezeframe_options = {}
+    </script>
+
+    <title>SoftGag-Project</title>
+</head>
+<body>
+<div class="clearfix">
+    <div class="wrapper">
+
+        <header>
+            <nav id="main-nav">
+                <div class="logo"><img src="imgs/logo.png" alt="SoftGag"/></div>
+                <div class="nav-items">
+                    <ul id="menu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">News</a>
+                        </li>
+                        <li><a href="#">SoftUni Team</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Svetlin Nakov</a>
+                                </li>
+                                <li>
+                                    <a href="#">Deqn Dachev</a>
+                                </li>
+                                <li>
+                                    <a href="#">Vladi Stoqnov</a>
+                                </li>
+                                <li>
+                                    <a href="#">Izberete Nqkoi</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+
+                        </li>
+                        <li>
+                            <a href="#">Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section>
+
+
+            <div class="post">
+                <span class="post-title">Some random post title avg lenght</span>
+                <div class="image">
+
+                    <div onmouseover="play()">
+                        <img class="freezeframe example" src="imgs/nakov/azis-nakov.gif"  />
+                    </div>
+
+                </div><!-- End of div Image-->
+                <div class="post-footer"> Votes up , down and comments</div>
+            </div><!-- End of div Post-->
+
+
+
+            <div class="post">
+                <span class="post-title">Some random post title avg lenght</span>
+                <div class="image">
+
+                    <div onmouseover="playAngry()">
+                        <img class="freezeframe example" src="imgs/nakov/hakov.gif" style="width: 500px; height: 500px;"  />
+                    </div>
+
+                </div><!-- End of div Image-->
+                <div class="post-footer"> Votes up , down and comments</div>
+            </div><!-- End of div Post-->
+
+
+
+
+
+
+
+        </section>
+    </div>
+    <footer id="buttom-footer">
+        <div class="copyright">
+            <p>Copyright© bullshit. Softuni PranK Website</p>
+        </div><!-- End of div Wrapper-->
+    </footer>
+</div><!-- End of div Clearfix-->
+
+</body>
+</html>
