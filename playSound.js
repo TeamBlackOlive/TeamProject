@@ -11,3 +11,10 @@ function playAngry() {
     helloSound.load();
     helloSound.play();
 }
+
+function playBorat() {
+    var helloSound = document.getElementById("borat");
+    helloSound.pause();
+    helloSound.load();
+    helloSound.play();
+}

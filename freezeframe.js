@@ -38,6 +38,8 @@ FreezeFrame = (function($) {
 
 	function FreezeFrame( _options ) {
 
+
+
 		_ff = this;
 
 		_options.class_name == null ?
