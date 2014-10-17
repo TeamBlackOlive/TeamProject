@@ -71,11 +71,11 @@ FreezeFrame = (function($) {
 			this.loading_background_position = _options.loading_background_position.toLowerCase();
 
 		_options.animation_icon_image == null ? 
-			this.animation_icon_image = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAl9JREFUeNrs2s2K2lAUAGATb3TE2Cr+oaJQNFOh1MVsxK0OuJbSdX2V9gG67GqW3RbaB7B9gy7qgKJF8G/EarHVWGMyJj230EXLLITm6q05F44/IVw5X3JPjiGCZVkuJw/R5fCBAAiAAAiAAAiAAAiAAAiAAAiAAAiAAAiAAAjwjyMej79MpVKP/hcAwe6boul0+p3P5/vmdruv4evbVqvVdRRALpd7HQqFpn6/XxUEwdI07UZV1ffNZvMzjwDE7gk9Hs8mGAwuYCl8hTNB32630nw+f1IqlRY8QtgOQAjRZVleJxKJ77AcVLptOBwup9PpPR4hbAcQRdGUJOk2HA5riqKokUjEgKK4GY/HKo8QhMGcv4oKIJg0+Xw+r8H7bSaT0XiEICwnhyLoCgQCptfrNSgCjxDkED8ChdGiwSMEOaQ2jxDkGOtuH4jJZHJ/Nps9LRaLi+Vy2WDVUB0FYB+IXq+36ff7P0ajURj2eQbF9EO73W6cFMBdENA8mXQbNFDier0mhULhQaVSeZzNZj+d3Bnwe+i6LkDCAqx9QmMwGJwlk8nzarV6Cf3EDHZ5DvHx5ADuSjwWiz0sl8uX8H9izjLxowLskfgL1okfBYCnxA8KwGPiBwGg9xpWq5XIY+IsAQT6stvt6BGX4Nrt4jFxZgCmaYqGYRDo4nzdbncny3KGx8SZAcCRl6CH9yuKcl6r1S6i0egXHhP/Y53aGfV6/U2n02nA5yuIC7vntzsEBo/KXkG84vaI/12w8Flhhw8EQAAEQAAEQAAEQAAEQAAEQAAEQAAEQAAEcNr4KcAABsB8S2vxAV8AAAAASUVORK5CYII=" :
+			this.animation_icon_image = "http://icons.iconarchive.com/icons/hopstarter/button/128/Button-Next-icon.png":
 			this.animation_icon_image = _options.animation_icon_image;
 
 		_options.animation_icon_position == null ? 
-			this.animation_icon_position = "top left" : 
+			this.animation_icon_position = "center" :
 			this.animation_icon_position = _options.animation_icon_position.toLowerCase();
 
 		_options.loading_fade_in_speed == null ? 
