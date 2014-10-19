@@ -119,3 +119,9 @@ ul#menu li:hover ul.sub-menu {
     display: inline-block;
 }
 /* End of Menu */
+
+.copyright img{
+    border:0;
+    width: 88px;
+    height: 31px;
+}
