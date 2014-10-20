@@ -13,8 +13,16 @@ body{
     background-color: #183046;
 }
 
+/*NAVIGATION*/
+.nav-items{
+    display: inline-block;
+    float: right;
+}
+
 #main-nav{
-    font-size: 1.7em;
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0;
     height: 70px;
     background-color: #183046;
 }
@@ -28,25 +36,53 @@ body{
             width: 278px;
         }
 
-        .nav-items{
-            float: right;
-            margin-top: -7px;
-        }
-         .nav-items ul li {
-             margin-left: 20px;
+        /* Main Menu */
+        ul#menu, ul#menu ul.sub-menu {
+            padding-top: 20px;
+            margin: 0 auto;
+            display:inline-block;
             list-style: none;
-            float: left;
+        }
+        /* Sub Menu */
+        ul#menu li a, ul#menu li ul.sub-menu li a {
+            color: white;
+            background-color: #183046;
+            padding: 5px;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
         }
 
-            .nav-items ul li:hover{
-            margin-left: 20px;
-            list-style: none;
-            float: left;
-            }
-            .nav-items ul li a{
-                color: #ffffff;
-                text-decoration: none;
-            }
+        ul#menu li {
+            display: inline;
+            position: relative;
+        }
+
+        ul#menu li a:hover{
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /*sub menu*/
+        ul#menu li ul.sub-menu {
+            display: none;
+            position: absolute;
+            left: -50px;
+            border-top-color: #FFF;
+            margin-top: -33px;
+            width: 166px;
+            padding: 49px;
+            font-size: 1.2rem;
+        }
+        ul#menu li:hover ul.sub-menu {
+            display: block;
+        }
+        ul#menu li:hover ul.sub-menu a:hover {
+            text-decoration: underline;
+        }
+        /* End of Menu */
+
+/*END OF NAVITAGTION*/
 
 div.post{
     margin-top: 30px;
@@ -95,7 +131,6 @@ div.post{
         padding: 20px;
         height: 100px;
         background-color: #333333;
-<<<<<<< HEAD
     }
 
  /*HEAD*/
@@ -109,57 +144,20 @@ div.post{
         height: 50px;
         margin-top:25px;
     }
-/*=======*/
-=======
->>>>>>> 62fa6583d95cc2ec72442e13157953fe02b89d5c
-
-    }
 
 
-    /* Main Menu */
-ul#menu, ul#menu ul.sub-menu {
-    padding-top: 20px;
-    margin: 0 auto;
-    font-size: 30px;
-}
-    /* Sub Menu */
-ul#menu li a, ul#menu li ul.sub-menu li a {
-    color: white;
-    background-color: #183046;
-    padding: 5px;
-    display: inline-block;
-}
 
-ul#menu li {
-    position: relative;
-}
 
-    /*sub menu*/
-ul#menu li ul.sub-menu {
-    display: none;
-    position: absolute;
-    top: 30px;
-    left: 2px;
-    width: 15rem;
-    padding-top: 10px;
-    padding-left: 35px;
-}
-ul#menu li:hover ul.sub-menu {
-    display: inline-block;
-}
-/* End of Menu */
-
-<<<<<<< HEAD
 /* freeze frame */
 figure.freezeframe-container {
     margin: 0px 0px 0px 0px;
     border-radius: 3px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
 
-=======
+
 .copyright img{
     border:0;
     width: 88px;
     height: 31px;
->>>>>>> 62fa6583d95cc2ec72442e13157953fe02b89d5c
 }
