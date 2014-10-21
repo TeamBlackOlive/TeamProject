@@ -161,3 +161,60 @@ figure.freezeframe-container {
     width: 88px;
     height: 31px;
 }
+
+/*Start of about*/
+section{
+    display: inline-block;
+}
+
+#leftLine{
+    width: 38%;
+    float: left;
+    border-color: #183046;
+    margin-top: 5%;
+}
+
+#rightLine{
+    width: 38%;
+    display: inline-block;
+    border-color: #183046;
+    float: right;
+    margin-top: 5%;
+}
+
+.team{
+    display: inline-block;
+    color: white;
+    background: #183046;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    padding: 0 3%;
+    margin-top: 2.3%;
+    margin-left: 1.5%;
+}
+
+.members{
+    display: inline-block;
+    width: 100%;
+}
+
+.members section{
+    float: left;
+    width: 50%;
+    margin-left: 5%;
+}
+
+.members section header{
+    font-size: 2em;
+    text-align: center;
+}
+
+.members aside{
+    float: right;
+    width: 40%;
+}
+
+.members img{
+    width: 80%;
+}
+/*End of about*/
