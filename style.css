@@ -62,7 +62,7 @@ body{
 
         /* Main Menu */
         ul#menu, ul#menu ul.sub-menu {
-            padding-top: 4%;
+            padding-top: 3.5%;
             margin: 0 auto;
             display:inline-block;
             list-style: none;
@@ -85,7 +85,9 @@ body{
 
         ul#menu li a:hover{
             font-weight: bold;
-            text-decoration: underline;
+            /*text-decoration: underline;*/
+            /*border-bottom: 1px solid white;*/
+            color: #979797 !important;
         }
 
         /*sub menu*/
@@ -95,7 +97,7 @@ body{
             left: -50px;
             border-top-color: #FFF;
             margin-top: -33px;
-            width: 166px;
+            width: 100%;
             padding: 49px;
             font-size: 1.2rem;
         }
@@ -103,7 +105,8 @@ body{
             display: block;
         }
         ul#menu li:hover ul.sub-menu a:hover {
-            text-decoration: underline;
+            text-decoration: none;
+            border: none;
         }
         /* End of Menu */
 
@@ -208,6 +211,7 @@ section{
 /*Start of about*/
 .innerSection{
     display: inline-block;
+    min-height: 0;
 }
 
 #leftLine{
@@ -285,14 +289,14 @@ section footer a{
 
 section .members-right footer{
     display: inline-block;
-    margin: 1% 0 2% 5%;
+    margin: 3% 0 2% 13.5%;
     float: left;
-    width: 60%;
+    width: 32%;
 }
 
 section .members-left footer{
     display: inline-block;
-    margin: 1% 8% 2% 0;
+    margin: 3% 14% 2% 0;
     width: 32%;
     float: right;
 }
