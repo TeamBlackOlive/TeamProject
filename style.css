@@ -2,24 +2,26 @@ body{
     background-color: #EEEEEE;
     margin:0;
     padding: 0;
+    height: 100%;
     color: #000000;
+}
+.container{
+    min-height: 100%;
 }
 .wrapper{
     width: 80%;
     min-height: 100%;
+    max-width: 100;
     margin:0 auto;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1080px) {
     .wrapper {
         width: 100%;
     }
 }
 
-@media (max-width: 815px) {
-    .wrapper {
-        width: 100%;
-    }
+@media (max-width: 860px) {
     div.nav-items{
         display:none;
     }
@@ -40,7 +42,7 @@ body{
 }
 
 #main-nav{
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin: 0;
     padding: 0;
     height: 70px;
@@ -72,6 +74,7 @@ body{
             display: inline-block;
             text-decoration: none;
             font-weight: bold;
+            margin-left: 20px;
         }
 
         ul#menu li {
@@ -151,6 +154,7 @@ div.post{
         padding: 20px;
         height: 100px;
         background-color: #333333;
+        width: 100%;
     }
 
  /*HEAD*/
@@ -159,7 +163,7 @@ div.post{
         height: 40px;
     }
 
-    #comment-gag{
+    .comment-gag{
         width: 100%;
         height: 50px;
         margin-top:25px;
@@ -189,8 +193,13 @@ figure.freezeframe-container {
     filter: none;
     -webkit-filter: grayscale(0%);
 }
-/*Start of about*/
+
 section{
+    min-height: 25rem;
+}
+
+/*Start of about*/
+section#about{
     display: inline-block;
 }
 
@@ -255,7 +264,6 @@ form {
     height:350px;
     font-family: Tahoma, Geneva, sans-serif;
     font-size: 14px;
-    font-style: italic;
     line-height: 24px;
     font-weight: bold;
     color: white;
@@ -301,7 +309,6 @@ textarea:focus, input:focus {
 }
 .feedbackForm{
     margin-top: 50px;
-    margin-left: 255px;
 }
 .contactForm{
     margin-left: 120px;
@@ -319,7 +326,7 @@ textarea:focus, input:focus {
 .inputButton:hover{
     background-color: orange;
     color: #183046;
-    border: 1 px solid #000000;
+    border: 1px solid #000000;
 }
 .inputButton:focus{
     background-color: cornflowerblue;
