@@ -170,9 +170,9 @@ div.post{
 
 /* freeze frame */
 figure.freezeframe-container {
-    margin: 0px 0px 0px 0px;
+    margin: 0;
     border-radius: 3px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -190,7 +190,7 @@ figure.freezeframe-container {
     -webkit-filter: grayscale(0%);
 }
 /*Start of about*/
-section{
+.innerSection{
     display: inline-block;
 }
 
@@ -220,36 +220,96 @@ section{
     margin-left: 1.5%;
 }
 
-.members{
+.members-right, .members-left{
     display: inline-block;
     width: 100%;
+    border-bottom: 2px solid #183046;
+    margin-top: 2%;
 }
 
-.members section{
+.members-right .innerSection{
     float: left;
-    width: 50%;
-    margin-left: 5%;
+    width: 45%;
+    margin-left: 8%;
 }
 
-.members section header{
+.members-left .innerSection{
+    float: right;
+    width: 45%;
+    margin-right: 8%;
+}
+
+.members-right .innerSection header, .members-left .innerSection header{
     font-size: 2em;
     text-align: center;
+    margin-bottom: -3%;
 }
 
-.members aside{
+.members-right aside{
     float: right;
-    width: 40%;
+    width: 30%;
+    margin-right: 2%;
 }
 
-.members img{
-    width: 80%;
+.members-left aside{
+    float: left;
+    width: 30%;
+    margin-left: 8%;
 }
+
+.members-left img, .members-right img{
+    width: 80%;
+    margin-bottom: -1%;
+}
+
+section footer a{
+    margin-left: 5%;
+    margin-right: 0;
+}
+
+section .members-right footer{
+    display: inline-block;
+    margin: 1% 0 2% 5%;
+    float: left;
+    width: 60%;
+}
+
+section .members-left footer{
+    display: inline-block;
+    margin: 1% 8% 2% 0;
+    width: 32%;
+    float: right;
+}
+
+a.btnFacebook::before{
+    content: url("imgs/buttons/facebook-button.png");
+}
+
+a.btnFacebook:hover::before{
+    content: url("imgs/buttons/facebook-button.png");
+    width: 110%;
+}
+
+a.btnGitHub::before{
+    content: url("imgs/buttons/gitHub-Button.png");
+}
+
+a.btnGoogle::before{
+    content: url("imgs/buttons/google-Plus-button.png");
+}
+
+section label{
+    display: inline-block;
+    margin-top: 1%;
+    vertical-align: top;
+}
+
 /*End of about*/
 
 form {
     background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
     background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-    margin:auto;
+    margin: auto;
     position:relative;
     width:390px;
     height:350px;
@@ -266,20 +326,20 @@ form {
     padding:10px;
     border: 1px solid #999;
     border: inset 1px solid #333;
-    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     background-color: #183046;
 }
 
 input {
-    width:375px;
-    display:block;
+    width: 375px;
+    display: block;
     border: 1px solid #999;
     height: 25px;
-    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 textarea {
@@ -287,9 +347,9 @@ textarea {
     height:75px;
     display:block;
     border: 1px solid #999;
-    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 textarea.message {
@@ -319,7 +379,7 @@ textarea:focus, input:focus {
 .inputButton:hover{
     background-color: orange;
     color: #183046;
-    border: 1 px solid #000000;
+    border: 1px solid #000000;
 }
 .inputButton:focus{
     background-color: cornflowerblue;
