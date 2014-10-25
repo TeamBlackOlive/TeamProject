@@ -12,7 +12,7 @@ body{
 .wrapper{
     width: 80%;
     min-height: 100%;
-    max-width: 100;
+    max-width: 100%;
     margin:0 auto;
 }
 
@@ -21,13 +21,25 @@ body{
         width: 100%;
     }
 }
+div.hidden-menu{
+    visibility: hidden;
+    display: inline-block;
+    float: right;
+    margin-right: 10px ;
+    margin-top: 2%;
+}
+
+    div.hidden-menu img{
+        width: 50px;
+        height: 50px;
+    }
 
 @media (max-width: 860px) {
     div.nav-items{
         display:none;
     }
     div.hidden-menu{
-        display: block;
+        visibility:visible ;
 
     }
 }
@@ -114,7 +126,7 @@ body{
 
 div.post{
     margin-top: 30px;
-    padding: 20px;
+    padding: 20px 0 20px 0;
     width: 100%;
     display: inline-block;
     border-bottom: 2px solid #C7C7C7;
@@ -162,6 +174,10 @@ div.post{
         background-color: #333333;
         width: 100%;
     }
+        #works-on-my-machine{
+            width: 50px;
+            height: 50px;
+        }
 
  /*HEAD*/
     div.votes img{
