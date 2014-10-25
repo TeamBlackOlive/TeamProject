@@ -37,3 +37,16 @@ function stopBorat() {
     helloSound.pause();
     helloSound.currentTime = 0;
 }
+
+function playClothes() {
+    var helloSound = document.getElementById("clothes");
+    helloSound.pause();
+    helloSound.load();
+    helloSound.play();
+}
+
+function stopClothes() {
+    var helloSound = document.getElementById("clothes");
+    helloSound.pause();
+    helloSound.currentTime = 0;
+}

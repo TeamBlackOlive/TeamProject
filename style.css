@@ -2,19 +2,50 @@ body{
     background-color: #EEEEEE;
     margin:0;
     padding: 0;
+    height: 100%;
     color: #000000;
+    font-size: 16px;
+}
+.container{
+    min-height: 100%;
 }
 .wrapper{
     width: 80%;
+    min-height: 100%;
+    max-width: 100;
     margin:0 auto;
+}
+
+@media (max-width: 1080px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 860px) {
+    div.nav-items{
+        display:none;
+    }
+    div.hidden-menu{
+        display: block;
+
+    }
 }
 .clearfix{
     height: 70px;
     background-color: #183046;
 }
 
+/*NAVIGATION*/
+.nav-items{
+    display: inline-block;
+    float: right;
+}
+
 #main-nav{
-    font-size: 1.7em;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
     height: 70px;
     background-color: #183046;
 }
@@ -25,35 +56,68 @@ body{
 
     }
         .logo img{
-            width: 278px;
+            width: 70%;
+            margin-top: 5%;
         }
 
-        .nav-items{
-            float: right;
-            margin-top: -7px;
-        }
-         .nav-items ul li {
-             margin-right: 20px;
+        /* Main Menu */
+        ul#menu, ul#menu ul.sub-menu {
+            padding-top: 3.5%;
+            margin: 0 auto;
+            display:inline-block;
             list-style: none;
-            float: left;
+        }
+        /* Sub Menu */
+        ul#menu li a, ul#menu li ul.sub-menu li a {
+            color: white;
+            background-color: #183046;
+            padding: 5px;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 20px;
         }
 
-            .nav-items ul li:hover{
-            margin-right: 20px;
-            list-style: none;
-            float: left;
-            /* removed  border-bottom: 1px solid #ffffff; */
-            }
-            .nav-items ul li a{
-                color: #ffffff;
-                text-decoration: none;
-            }
+        ul#menu li {
+            display: inline;
+            position: relative;
+        }
+
+        ul#menu li a:hover{
+            font-weight: bold;
+            /*text-decoration: underline;*/
+            /*border-bottom: 1px solid white;*/
+            color: #979797 !important;
+        }
+
+        /*sub menu*/
+        ul#menu li ul.sub-menu {
+            display: none;
+            position: absolute;
+            left: -50px;
+            border-top-color: #FFF;
+            margin-top: -33px;
+            width: 100%;
+            padding: 49px;
+            font-size: 1.2rem;
+        }
+        ul#menu li:hover ul.sub-menu {
+            display: block;
+        }
+        ul#menu li:hover ul.sub-menu a:hover {
+            text-decoration: none;
+            border: none;
+        }
+        /* End of Menu */
+
+/*END OF NAVITAGTION*/
 
 div.post{
     margin-top: 30px;
     padding: 20px;
-    width: 60%;
-    border-bottom: 2px solid #000000;
+    width: 100%;
+    display: inline-block;
+    border-bottom: 2px solid #C7C7C7;
 }
 
     span.post-title {
@@ -67,8 +131,8 @@ div.post{
     }
 
     div.image{
-        width: 100%;
-        margin-top:30px;
+        float: left;
+        width: 50%;
         height: 100%;
     }
 
@@ -76,46 +140,261 @@ div.post{
         width: 100%;
     }
 
+    div.sidebar{
+        float: left;
+        width: 40%;
+        margin-left: 25px;
+        padding: 5px;
+    }
+
+    div.votes{
+        margin: 0 auto;
+    }
+
     #buttom-footer{
         color: #ffffff;
         text-align: center;
+        margin-top: 2.5%;
+        padding: 1.8% 0;
         margin-top:30px;
-        padding: 20px;
+        padding: 20px 0 20px 0;
         height: 100px;
         background-color: #333333;
+        width: 100%;
+    }
 
+ /*HEAD*/
+    div.votes img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .comment-gag{
+        width: 100%;
+        height: 50px;
+        margin-top:25px;
     }
 
 
-    /* Main Menu */
-ul#menu, ul#menu ul.sub-menu {
-    padding-top: 20px;
-    margin: 0 auto;
-    font-size: 30px;
+
+
+/* freeze frame */
+figure.freezeframe-container {
+    margin: 0;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
-    /* Sub Menu */
-ul#menu li a, ul#menu li ul.sub-menu li a {
+
+
+.copyright img{
+    border:0;
+    width: 88px;
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    height: 31px;
+}
+
+.copyright img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
+
+section{
+    min-height: 25rem;
+}
+
+#about{
+    display: inline-block;
+}
+
+/*Start of about*/
+.innerSection{
+    display: inline-block;
+    min-height: 0;
+}
+
+#leftLine{
+    width: 38%;
+    float: left;
+    border-color: #183046;
+    margin-top: 5%;
+}
+
+#rightLine{
+    width: 38%;
+    display: inline-block;
+    border-color: #183046;
+    float: right;
+    margin-top: 5%;
+}
+
+.team{
+    display: inline-block;
     color: white;
+    background: #183046;
+    border: 2px solid #000000;
+    border-radius: 30px;
+    padding: 0 3%;
+    margin-top: 2.3%;
+    margin-left: 1.5%;
+}
+
+.members-right, .members-left{
+    display: inline-block;
+    width: 100%;
+    border-bottom: 2px solid #183046;
+    margin-top: 2%;
+}
+
+.members-right .innerSection{
+    float: left;
+    width: 45%;
+    margin-left: 8%;
+}
+
+.members-left .innerSection{
+    float: right;
+    width: 45%;
+    margin-right: 8%;
+}
+
+.members-right .innerSection header, .members-left .innerSection header{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: -3%;
+}
+
+.members-right aside{
+    float: right;
+    width: 30%;
+    margin-right: 2%;
+}
+
+.members-left aside{
+    float: left;
+    width: 30%;
+    margin-left: 8%;
+}
+
+.members-left img, .members-right img{
+    width: 80%;
+    margin-bottom: -1%;
+}
+
+section footer a{
+    margin-left: 5%;
+    margin-right: 0;
+}
+
+section .members-right footer{
+    display: inline-block;
+    margin: 3% 0 2% 13.5%;
+    float: left;
+    width: 32%;
+}
+
+section .members-left footer{
+    display: inline-block;
+    margin: 3% 14% 2% 0;
+    width: 32%;
+    float: right;
+}
+
+a.btnFacebook::before{
+    content: url("imgs/buttons/facebook-button.png");
+}
+
+a.btnFacebook:hover::before{
+    content: url("imgs/buttons/facebook-button.png");
+    width: 110%;
+}
+
+a.btnGitHub::before{
+    content: url("imgs/buttons/gitHub-Button.png");
+}
+
+a.btnGoogle::before{
+    content: url("imgs/buttons/google-Plus-button.png");
+}
+
+section label{
+    display: inline-block;
+    margin-top: 1%;
+    vertical-align: top;
+}
+
+/*End of about*/
+
+
+/*Form*/
+form {
+    margin: auto;
+    margin-bottom: 5%;
+    width: 36%;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 2%;
+    border: 1px solid #999;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     background-color: #183046;
-    padding: 5px;
-    display: inline-block;
 }
 
-ul#menu li {
-    position: relative;
+.feedbackForm{
+    margin-top: 5%;
 }
 
-    /*sub menu*/
-ul#menu li ul.sub-menu {
-    display: none;
-    position: absolute;
-    top: 30px;
-    left: 2px;
-    width: 15rem;
-    padding-top: 10px;
-    padding-left: 35px;
+.formHeading{
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 1.7em;
 }
-ul#menu li:hover ul.sub-menu {
-    display: inline-block;
+
+.feedbackForm label{
+    margin-bottom: 0.5%;
 }
-/* End of Menu */
+
+input {
+    width: 99%;
+    display: block;
+    margin-bottom: 2%;
+    border: 1px solid #999;
+    height: 25px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+textarea {
+    width: 98%;
+    height: 75px;
+    display: block;
+    border: 1px solid #999;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+textarea:focus, input:focus {
+    border: 1px solid darkblue;
+    background-color: #ccffff;
+}
+
+.inputButton{
+    margin: 5% 0 0 37%;
+    color: white ;
+    background-color: #183046;
+    border: 1px solid white;
+    width: 100px;
+    border-radius:10px;
+    font-size: .8em;
+}
+.inputButton:hover{
+    background-color: orange;
+    color: #000000;
+    border: 1px solid #000000;
+    font-weight: 500;
+}
+.inputButton:focus{
+    background-color: cornflowerblue;
+}
+/*End of form*/
