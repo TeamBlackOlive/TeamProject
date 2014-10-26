@@ -321,32 +321,29 @@ section .members-left footer{
     margin-right: 3%;
 }
 
+.fb, .github, .google{
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+}
+
+.fb:hover, .github:hover, .google:hover{
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
+
 .social img.btnFacebook{
     width: 26px;
     height: 25px;
     margin-right: 1%;
     vertical-align: bottom;
-    filter: gray;
-    -webkit-filter: grayscale(100%);
+
 }
 
-.social img.btnFacebook:hover {
-    filter: none;
-    -webkit-filter: grayscale(0%);
-}
-
-.social img.btnGitHub{
+.social img.btnGitHub {
     width: 25px;
     height: 25px;
     margin-right: 1%;
     vertical-align: bottom;
-    filter: gray;
-    -webkit-filter: grayscale(100%);
-}
-
-.social img.btnGitHub:hover {
-    filter: none;
-    -webkit-filter: grayscale(0%);
 }
 
 .social img.btnGoogle{
@@ -354,15 +351,7 @@ section .members-left footer{
     height: 25px;
     margin-right: 1%;
     vertical-align: bottom;
-    filter: gray;
-    -webkit-filter: grayscale(100%);
 }
-
-.social img.btnGoogle:hover {
-    filter: none;
-    -webkit-filter: grayscale(0%);
-}
-
 
 .social label{
     display: inline-block;
