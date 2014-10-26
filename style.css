@@ -321,33 +321,18 @@ section .members-left footer{
     margin-right: 3%;
 }
 
-.fb, .github, .google{
+.fb, .github, .softUni{
     filter: gray;
     -webkit-filter: grayscale(100%);
 }
 
-.fb:hover, .github:hover, .google:hover{
+.fb:hover, .github:hover, .softUni:hover{
     filter: none;
     -webkit-filter: grayscale(0%);
 }
 
-.social img.btnFacebook{
+.social img.btnFacebook, .social img.btnSoftUni, .social img.btnGitHub{
     width: 26px;
-    height: 25px;
-    margin-right: 1%;
-    vertical-align: bottom;
-
-}
-
-.social img.btnGitHub {
-    width: 25px;
-    height: 25px;
-    margin-right: 1%;
-    vertical-align: bottom;
-}
-
-.social img.btnGoogle{
-    width: 28px;
     height: 25px;
     margin-right: 1%;
     vertical-align: bottom;
