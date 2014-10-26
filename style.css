@@ -12,9 +12,30 @@ body{
 .wrapper{
     width: 80%;
     min-height: 100%;
-    max-width: 100;
+    max-width: 100%;
     margin:0 auto;
 }
+div.hidden-menu img{
+    visibility: hidden;
+    width: 50px;
+    margin-top: 10px;
+    height: 50px;
+    float: right;
+}
+div.list{
+    display: block;
+    margin-top: -2%;
+    background-color: #183046;
+    width: 100%;
+    position: absolute;
+
+}
+#menu2{
+    list-style: none;
+}
+    #menu2 a{
+        text-decoration: none;
+    }
 
 @media (max-width: 1080px) {
     .wrapper {
@@ -26,9 +47,8 @@ body{
     div.nav-items{
         display:none;
     }
-    div.hidden-menu{
-        display: block;
-
+    div.hidden-menu img{
+        visibility: visible;
     }
 }
 .clearfix{
