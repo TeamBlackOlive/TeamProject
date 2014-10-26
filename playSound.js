@@ -156,3 +156,43 @@ function stopRambo() {
     helloSound.pause();
     helloSound.currentTime = 0;
 }
+
+function playLaugh() {
+    var helloSound = document.getElementById("laugh");
+    helloSound.pause();
+    helloSound.load();
+    helloSound.play();
+}
+
+function stopLaugh() {
+    var helloSound = document.getElementById("laugh");
+    helloSound.pause();
+    helloSound.currentTime = 0;
+}
+
+function playSuper() {
+    var helloSound = document.getElementById("super");
+    helloSound.pause();
+    helloSound.load();
+    helloSound.play();
+}
+
+function stopSuper() {
+    var helloSound = document.getElementById("super");
+    helloSound.pause();
+    helloSound.currentTime = 0;
+}
+
+
+function playMoney() {
+    var helloSound = document.getElementById("money");
+    helloSound.pause();
+    helloSound.load();
+    helloSound.play();
+}
+
+function stopMoney() {
+    var helloSound = document.getElementById("money");
+    helloSound.pause();
+    helloSound.currentTime = 0;
+}

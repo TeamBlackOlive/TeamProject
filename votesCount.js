@@ -135,3 +135,38 @@ function ramboDislikesClick() {
     document.getElementById("ramboDislikes").innerHTML = ramboDislikesCount;
 }
 
+var cheechLikesCount = 0;
+function cheechLikesClick() {
+    cheechLikesCount += 1;
+    document.getElementById("cheechLikes").innerHTML = cheechLikesCount;
+}
+var cheechDislikesCount = 0;
+function cheechDislikesClick() {
+    cheechDislikesCount += 1;
+    document.getElementById("cheechDislikes").innerHTML = cheechDislikesCount;
+}
+
+var superdidoLikesCount = 0;
+function superdidoLikesClick() {
+    superdidoLikesCount += 1;
+    document.getElementById("superdidoLikes").innerHTML = superdidoLikesCount;
+}
+var superdidoDislikesCount = 0;
+function superdidoDislikesClick() {
+    superdidoDislikesCount += 1;
+    document.getElementById("superdidoDislikes").innerHTML = superdidoDislikesCount;
+}
+
+
+var moneyLikesCount = 0;
+function moneyLikesClick() {
+    moneyLikesCount += 1;
+    document.getElementById("moneyLikes").innerHTML = moneyLikesCount;
+}
+var moneyDislikesCount = 0;
+function moneyDislikesClick() {
+    moneyDislikesCount += 1;
+    document.getElementById("moneyDislikes").innerHTML = moneyDislikesCount;
+}
+
+
