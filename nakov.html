@@ -10,10 +10,17 @@
     <audio src="imgs/sounds/angry.wav"  id="angry"> </audio>
     <audio src="imgs/sounds/borat.wav"  id="borat"> </audio>
     <audio src="imgs/sounds/clothes.wav" id="clothes"></audio>
-
+    <audio src="imgs/sounds/westside.wav" id="west"></audio>
+    <audio src="imgs/sounds/entertain.wav" id="gladiator"></audio>
+    <audio src="imgs/sounds/fuck.wav" id="fuck"></audio>
+    <audio src="imgs/sounds/time.wav" id="time"></audio>
+    <audio src="imgs/sounds/bond.wav" id="bond"></audio>
+    <audio src="imgs/sounds/hello.wav" id="hello"></audio>
+    <audio src="imgs/sounds/fire.wav" id="fire"></audio>
+    <audio src="imgs/sounds/rambo.wav" id="rambo"></audio>
 
     <!-- jQuery include -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <!-- freezeframe include -->
     <script type="text/javascript" src="freezeframe.js"></script>
     <!-- freezeframe options -->
@@ -72,8 +79,26 @@
                     <span class="post-title">Napipai Nakov</span>
                     <p>Rate this GAG</p>
                     <div class="votes">
-                        <img src="imgs/check.png" alt=""/>
-                        <img src="imgs/cross.png" alt=""/>
+                        <script type="text/javascript">
+                            var likesCount = 0;
+                            function likesClick() {
+                                likesCount += 1;
+                                document.getElementById("clicks").innerHTML = likesCount;
+                            }
+                            var dislikesCount = 0;
+                            function dislikeClick() {
+                                dislikesCount += 1;
+                                document.getElementById("dislikes").innerHTML = dislikesCount;
+                            }
+
+                        </script>
+
+                        <p>Likes <a id="clicks">0</a></p>
+                        <p>Dislikes <a id="dislikes">0</a></p>
+
+
+                        <img src="imgs/check.png" alt="" onClick="likesClick()">
+                        <img src="imgs/cross.png" alt="" onClick="dislikeClick()"/>
                     </div>
                     <div class="comment">
                         <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
@@ -102,7 +127,6 @@
             <div class="post">
                 <div class="image">
                         <img class="freezeframe example" src="imgs/nakov/bakov.gif" alt="" onmouseover="playBorat()" onmouseout="stopBorat()" />
-<<<<<<< HEAD
                 </div><!-- End of div Image-->
                 <div class="sidebar">
                     <span class="post-title">I like S*X , It's nice</span>
@@ -124,11 +148,60 @@
                 </div><!-- End of div Image-->
                 <div class="sidebar">
                     <span class="post-title">CLOTHES, NOW!!!</span>
-=======
+                    <p>Rate this GAG</p>
+                    <div class="votes">
+                        <img src="imgs/check.png" alt=""/>
+                        <img src="imgs/cross.png" alt=""/>
+                    </div>
+                    <div class="comment">
+                        <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
+                    </div>
+                </div><!--End if div sidebar-->
+            </div><!-- End of div Post-->
+
+
+            <div class="post">
+                <div class="image">
+                    <img class="freezeframe example" src="imgs/nakov/westside.gif" alt="" onmouseover="playWest()" onmouseout="stopWest()" />
                 </div><!-- End of div Image-->
                 <div class="sidebar">
-                    <span class="post-title">I like S*X , It's nice</span>
->>>>>>> origin/master
+                    <span class="post-title">WESTSIDE!</span>
+                    <p>Rate this GAG</p>
+                    <div class="votes">
+                        <img src="imgs/check.png" alt=""/>
+                        <img src="imgs/cross.png" alt=""/>
+                    </div>
+                    <div class="comment">
+                        <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
+                    </div>
+                </div><!--End if div sidebar-->
+            </div><!-- End of div Post-->
+
+
+            <div class="post">
+                <div class="image">
+                    <img class="freezeframe example" src="imgs/nakov/naximus.gif" alt="" onmouseover="playGladiator()" onmouseout="stopGladiator()" />
+                </div><!-- End of div Image-->
+                <div class="sidebar">
+                    <span class="post-title">When in Rome...</span>
+                    <p>Rate this GAG</p>
+                    <div class="votes">
+                        <img src="imgs/check.png" alt=""/>
+                        <img src="imgs/cross.png" alt=""/>
+                    </div>
+                    <div class="comment">
+                        <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
+                    </div>
+                </div><!--End if div sidebar-->
+            </div><!-- End of div Post-->
+
+
+            <div class="post">
+                <div class="image">
+                    <img class="freezeframe example" src="imgs/nakov/censored.gif" alt="" onmouseover="playFuck()" onmouseout="stopFuck()" />
+                </div><!-- End of div Image-->
+                <div class="sidebar">
+                    <span class="post-title">When a BUG is found!</span>
                     <p>Rate this GAG</p>
                     <div class="votes">
                         <img src="imgs/check.png" alt=""/>
@@ -142,6 +215,93 @@
 
 
 
+            <div class="post">
+                <div class="image">
+                    <img class="freezeframe example" src="imgs/nakov/angrypr.gif" alt="" onmouseover="playPR()" onmouseout="stopPR()" />
+                </div><!-- End of div Image-->
+                <div class="sidebar">
+                    <span class="post-title">Friday at 19:59</span>
+                    <p>Rate this GAG</p>
+                    <div class="votes">
+                        <img src="imgs/check.png" alt=""/>
+                        <img src="imgs/cross.png" alt=""/>
+                    </div>
+                    <div class="comment">
+                        <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
+                    </div>
+                </div><!--End if div sidebar-->
+            </div><!-- End of div Post-->
+
+
+            <div class="post">
+                <div class="image">
+                    <img class="freezeframe example" src="imgs/nakov/bond.gif" alt="" onmouseover="playBond()" onmouseout="stopBond()" />
+                </div><!-- End of div Image-->
+                <div class="sidebar">
+                    <span class="post-title">Nakov's UK cousin</span>
+                    <p>Rate this GAG</p>
+                    <div class="votes">
+                        <img src="imgs/check.png" alt=""/>
+                        <img src="imgs/cross.png" alt=""/>
+                    </div>
+                    <div class="comment">
+                        <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
+                    </div>
+                </div><!--End if div sidebar-->
+            </div><!-- End of div Post-->
+
+            <div class="post">
+                <div class="image">
+                    <img class="freezeframe example" src="imgs/nakov/nakov-montana.gif" alt="" onmouseover="playHello()" onmouseout="stopHello()" />
+                </div><!-- End of div Image-->
+                <div class="sidebar">
+                    <span class="post-title">Nakov in America!</span>
+                    <p>Rate this GAG</p>
+                    <div class="votes">
+                        <img src="imgs/check.png" alt=""/>
+                        <img src="imgs/cross.png" alt=""/>
+                    </div>
+                    <div class="comment">
+                        <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
+                    </div>
+                </div><!--End if div sidebar-->
+            </div><!-- End of div Post-->
+
+
+            <div class="post">
+                <div class="image">
+                    <img class="freezeframe example" src="imgs/nakov/nakovaway.gif" alt="" onmouseover="playFire()" onmouseout="stopFire()" />
+                </div><!-- End of div Image-->
+                <div class="sidebar">
+                    <span class="post-title">Nakov discovers FIRE!</span>
+                    <p>Rate this GAG</p>
+                    <div class="votes">
+                        <img src="imgs/check.png" alt=""/>
+                        <img src="imgs/cross.png" alt=""/>
+                    </div>
+                    <div class="comment">
+                        <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
+                    </div>
+                </div><!--End if div sidebar-->
+            </div><!-- End of div Post-->
+
+
+            <div class="post">
+                <div class="image">
+                    <img class="freezeframe example" src="imgs/nakov/nambo.gif" alt="" onmouseover="playRambo()" onmouseout="stopRambo()" />
+                </div><!-- End of div Image-->
+                <div class="sidebar">
+                    <span class="post-title">NAMBO 3!</span>
+                    <p>Rate this GAG</p>
+                    <div class="votes">
+                        <img src="imgs/check.png" alt=""/>
+                        <img src="imgs/cross.png" alt=""/>
+                    </div>
+                    <div class="comment">
+                        <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
+                    </div>
+                </div><!--End if div sidebar-->
+            </div><!-- End of div Post-->
 
 
         </section>
