@@ -196,3 +196,17 @@ function stopMoney() {
     helloSound.pause();
     helloSound.currentTime = 0;
 }
+
+function playScores() {
+    var helloSound = document.getElementById("scores");
+    helloSound.pause();
+    helloSound.load();
+    helloSound.play();
+}
+
+function stopScores() {
+    var helloSound = document.getElementById("scores");
+    helloSound.pause();
+    helloSound.currentTime = 0;
+
+}

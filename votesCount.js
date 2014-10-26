@@ -169,4 +169,16 @@ function moneyDislikesClick() {
     document.getElementById("moneyDislikes").innerHTML = moneyDislikesCount;
 }
 
+var nakovScoresLikesCount = 0;
+function nakovScoresLikesClick() {
+    nakovScoresLikesCount += 1;
+    document.getElementById("nakovScoresLikes").innerHTML = nakovScoresLikesCount;
+}
+var nakovScoresDislikesCount = 0;
+function nakovScoresDislikesClick() {
+    nakovScoresDislikesCount += 1;
+    document.getElementById("nakovScoresDislikes").innerHTML = nakovScoresDislikesCount;
+}
+
+
 

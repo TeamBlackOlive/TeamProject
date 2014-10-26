@@ -18,6 +18,8 @@
     <audio src="imgs/sounds/hello.wav" id="hello"></audio>
     <audio src="imgs/sounds/fire.wav" id="fire"></audio>
     <audio src="imgs/sounds/rambo.wav" id="rambo"></audio>
+    <audio src="imgs/sounds/goal.wav" id="scores"></audio>
+
     <!-- jQuery include -->
     <script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <!-- freezeframe include -->
@@ -313,6 +315,27 @@
                     </div>
                 </div><!--End if div sidebar-->
             </div><!-- End of div Post-->
+
+
+            <div class="post">
+                <div class="image">
+                    <img class="freezeframe example" src="imgs/nakov/nakovscores.gif" alt="" onmouseover="playScores()" onmouseout="stopScores()" />
+                </div><!-- End of div Image-->
+                <div class="sidebar">
+                    <span class="post-title">IN MADRID!</span>
+                    <p>Rate this GAG</p>
+                    <div class="votes">
+                        <p>Likes <a id="nakovScoresLikes">0</a></p>
+                        <p>Dislikes <a id="nakovScoresDislikes">0</a></p>
+                        <img src="imgs/check.png" alt="" onclick="nakovScoresLikesClick()"/>
+                        <img src="imgs/cross.png" alt="" onclick="nakovScoresDislikesClick()"/>
+                    </div>
+                    <div class="comment">
+                        <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
+                    </div>
+                </div><!--End if div sidebar-->
+            </div><!-- End of div Post-->
+
 
 
         </section>
