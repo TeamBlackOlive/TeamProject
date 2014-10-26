@@ -27,6 +27,8 @@
     <script type="text/javascript">
         freezeframe_options = {}
     </script>
+    <script type="text/javascript" src="votesCount.js"></script>
+
 </head>
 <body>
 <div class="clearfix">
@@ -79,19 +81,6 @@
                     <span class="post-title">Napipai Nakov</span>
                     <p>Rate this GAG</p>
                     <div class="votes">
-                        <script type="text/javascript">
-                            var likesCount = 0;
-                            function likesClick() {
-                                likesCount += 1;
-                                document.getElementById("clicks").innerHTML = likesCount;
-                            }
-                            var dislikesCount = 0;
-                            function dislikeClick() {
-                                dislikesCount += 1;
-                                document.getElementById("dislikes").innerHTML = dislikesCount;
-                            }
-
-                        </script>
 
                         <p>Likes <a id="clicks">0</a></p>
                         <p>Dislikes <a id="dislikes">0</a></p>
@@ -114,8 +103,12 @@
                     <span class="post-title">Dont make Nakov angry</span>
                     <p>Rate this GAG</p>
                     <div class="votes">
-                        <img src="imgs/check.png" alt=""/>
-                        <img src="imgs/cross.png" alt=""/>
+
+                        <p>Likes <a id="hulkLikes">0</a></p>
+                        <p>Dislikes <a id="hulkDislikes">0</a></p>
+                        <img src="imgs/check.png" alt="" onclick="hulkLikesClick()" >
+                        <img src="imgs/cross.png" alt="" onclick="hulkDislikesClick()"/>
+
                     </div>
                     <div class="comment">
                         <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
@@ -132,8 +125,10 @@
                     <span class="post-title">I like S*X , It's nice</span>
                     <p>Rate this GAG</p>
                     <div class="votes">
-                        <img src="imgs/check.png" alt=""/>
-                        <img src="imgs/cross.png" alt=""/>
+                        <p>Likes <a id="bakovLikes">0</a></p>
+                        <p>Dislikes <a id="bakovDislikes">0</a></p>
+                        <img src="imgs/check.png" alt="" onclick="bakovLikesClick()"/>
+                        <img src="imgs/cross.png" alt="" onclick="bakovDislikesClick()"/>
                     </div>
                     <div class="comment">
                         <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
@@ -150,8 +145,10 @@
                     <span class="post-title">CLOTHES, NOW!!!</span>
                     <p>Rate this GAG</p>
                     <div class="votes">
-                        <img src="imgs/check.png" alt=""/>
-                        <img src="imgs/cross.png" alt=""/>
+                        <p>Likes <a id="svetlinatorLikes">0</a></p>
+                        <p>Dislikes <a id="svetlinatorDislikes">0</a></p>
+                        <img src="imgs/check.png" alt="" onclick="svetlinatorLikesClick()"/>
+                        <img src="imgs/cross.png" alt="" onclick="svetlinatorDislikesClick()"/>
                     </div>
                     <div class="comment">
                         <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
@@ -168,8 +165,10 @@
                     <span class="post-title">WESTSIDE!</span>
                     <p>Rate this GAG</p>
                     <div class="votes">
-                        <img src="imgs/check.png" alt=""/>
-                        <img src="imgs/cross.png" alt=""/>
+                        <p>Likes <a id="westsideLikes">0</a></p>
+                        <p>Dislikes <a id="westsideDislikes">0</a></p>
+                        <img src="imgs/check.png" alt="" onclick="westsideLikesClick()"/>
+                        <img src="imgs/cross.png" alt="" onclick="westsideDislikesClick()"/>
                     </div>
                     <div class="comment">
                         <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
@@ -186,8 +185,10 @@
                     <span class="post-title">When in Rome...</span>
                     <p>Rate this GAG</p>
                     <div class="votes">
-                        <img src="imgs/check.png" alt=""/>
-                        <img src="imgs/cross.png" alt=""/>
+                        <p>Likes <a id="naximusLikes">0</a></p>
+                        <p>Dislikes <a id="naximusDislikes">0</a></p>
+                        <img src="imgs/check.png" alt="" onclick="naximusLikesClick()"/>
+                        <img src="imgs/cross.png" alt="" onclick="naximusDislikesClick()"/>
                     </div>
                     <div class="comment">
                         <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
@@ -204,8 +205,10 @@
                     <span class="post-title">When a BUG is found!</span>
                     <p>Rate this GAG</p>
                     <div class="votes">
-                        <img src="imgs/check.png" alt=""/>
-                        <img src="imgs/cross.png" alt=""/>
+                        <p>Likes <a id="censoredLikes">0</a></p>
+                        <p>Dislikes <a id="censoredDislikes">0</a></p>
+                        <img src="imgs/check.png" alt="" onclick="censoredLikesClick()"/>
+                        <img src="imgs/cross.png" alt="" onclick="censoredDislikesClick()"/>
                     </div>
                     <div class="comment">
                         <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
@@ -223,8 +226,10 @@
                     <span class="post-title">Friday at 19:59</span>
                     <p>Rate this GAG</p>
                     <div class="votes">
-                        <img src="imgs/check.png" alt=""/>
-                        <img src="imgs/cross.png" alt=""/>
+                        <p>Likes <a id="angryLikes">0</a></p>
+                        <p>Dislikes <a id="angryDislikes">0</a></p>
+                        <img src="imgs/check.png" alt="" onclick="angryLikesClick()"/>
+                        <img src="imgs/cross.png" alt="" onclick="angryDislikesClick()"/>
                     </div>
                     <div class="comment">
                         <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
@@ -241,8 +246,10 @@
                     <span class="post-title">Nakov's UK cousin</span>
                     <p>Rate this GAG</p>
                     <div class="votes">
-                        <img src="imgs/check.png" alt=""/>
-                        <img src="imgs/cross.png" alt=""/>
+                        <p>Likes <a id="bondLikes">0</a></p>
+                        <p>Dislikes <a id="bondDislikes">0</a></p>
+                        <img src="imgs/check.png" alt="" onclick="bondLikesClick()"/>
+                        <img src="imgs/cross.png" alt="" onclick="bondDislikesClick()"/>
                     </div>
                     <div class="comment">
                         <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
@@ -258,8 +265,10 @@
                     <span class="post-title">Nakov in America!</span>
                     <p>Rate this GAG</p>
                     <div class="votes">
-                        <img src="imgs/check.png" alt=""/>
-                        <img src="imgs/cross.png" alt=""/>
+                        <p>Likes <a id="montanaLikes">0</a></p>
+                        <p>Dislikes <a id="montanaDislikes">0</a></p>
+                        <img src="imgs/check.png" alt="" onclick="montanaLikesClick()"/>
+                        <img src="imgs/cross.png" alt="" onclick="montanaDislikesClick()"/>
                     </div>
                     <div class="comment">
                         <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
@@ -276,8 +285,10 @@
                     <span class="post-title">Nakov discovers FIRE!</span>
                     <p>Rate this GAG</p>
                     <div class="votes">
-                        <img src="imgs/check.png" alt=""/>
-                        <img src="imgs/cross.png" alt=""/>
+                        <p>Likes <a id="castAwayLikes">0</a></p>
+                        <p>Dislikes <a id="castAwayDislikes">0</a></p>
+                        <img src="imgs/check.png" alt="" onclick="castAwayLikesClick()"/>
+                        <img src="imgs/cross.png" alt="" onclick="castAwayDislikesClick()"/>
                     </div>
                     <div class="comment">
                         <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
@@ -294,8 +305,10 @@
                     <span class="post-title">NAMBO 3!</span>
                     <p>Rate this GAG</p>
                     <div class="votes">
-                        <img src="imgs/check.png" alt=""/>
-                        <img src="imgs/cross.png" alt=""/>
+                        <p>Likes <a id="ramboLikes">0</a></p>
+                        <p>Dislikes <a id="ramboDislikes">0</a></p>
+                        <img src="imgs/check.png" alt="" onclick="ramboLikesClick()"/>
+                        <img src="imgs/cross.png" alt="" onclick="ramboDislikesClick()"/>
                     </div>
                     <div class="comment">
                         <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
