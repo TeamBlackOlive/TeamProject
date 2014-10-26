@@ -301,22 +301,53 @@ section .members-left footer{
     float: right;
 }
 
-a.btnFacebook::before{
-    content: url("imgs/buttons/facebook-button.png");
+footer a{
+    color: #000000;
+    text-decoration: none;
 }
 
-a.btnFacebook:hover::before{
-    content: url("imgs/buttons/facebook-button.png");
-    width: 110%;
+footer img.btnFacebook{
+    width: 26px;
+    height: 25px;
+    margin-right: 1%;
+    vertical-align: bottom;
+    filter: gray;
+    -webkit-filter: grayscale(100%);
 }
 
-a.btnGitHub::before{
-    content: url("imgs/buttons/gitHub-Button.png");
+footer img.btnFacebook:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
 }
 
-a.btnGoogle::before{
-    content: url("imgs/buttons/google-Plus-button.png");
+footer img.btnGitHub{
+    width: 25px;
+    height: 25px;
+    margin-right: 1%;
+    vertical-align: bottom;
+    filter: gray;
+    -webkit-filter: grayscale(100%);
 }
+
+footer img.btnGitHub:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
+
+footer img.btnGoogle{
+    width: 28px;
+    height: 25px;
+    margin-right: 1%;
+    vertical-align: bottom;
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+}
+
+footer img.btnGoogle:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+}
+
 
 section label{
     display: inline-block;
