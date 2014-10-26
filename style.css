@@ -282,6 +282,13 @@ section{
     margin-bottom: -1%;
 }
 
+.personal-picture{
+    width: 200px;
+    height: 200px;
+    border-radius: 500px;
+    border: 1px solid darkgray;
+}
+
 section footer a{
     margin-left: 5%;
     margin-right: 0;
@@ -301,12 +308,20 @@ section .members-left footer{
     float: right;
 }
 
-footer a{
-    color: #000000;
-    text-decoration: none;
+.social{
+    display: inline-block;
+    width: 65%;
+    margin: 3% 0 5% 20%;
 }
 
-footer img.btnFacebook{
+
+.social a{
+    color: #000000;
+    text-decoration: none;
+    margin-right: 3%;
+}
+
+.social img.btnFacebook{
     width: 26px;
     height: 25px;
     margin-right: 1%;
@@ -315,12 +330,12 @@ footer img.btnFacebook{
     -webkit-filter: grayscale(100%);
 }
 
-footer img.btnFacebook:hover {
+.social img.btnFacebook:hover {
     filter: none;
     -webkit-filter: grayscale(0%);
 }
 
-footer img.btnGitHub{
+.social img.btnGitHub{
     width: 25px;
     height: 25px;
     margin-right: 1%;
@@ -329,12 +344,12 @@ footer img.btnGitHub{
     -webkit-filter: grayscale(100%);
 }
 
-footer img.btnGitHub:hover {
+.social img.btnGitHub:hover {
     filter: none;
     -webkit-filter: grayscale(0%);
 }
 
-footer img.btnGoogle{
+.social img.btnGoogle{
     width: 28px;
     height: 25px;
     margin-right: 1%;
@@ -343,13 +358,13 @@ footer img.btnGoogle{
     -webkit-filter: grayscale(100%);
 }
 
-footer img.btnGoogle:hover {
+.social img.btnGoogle:hover {
     filter: none;
     -webkit-filter: grayscale(0%);
 }
 
 
-section label{
+.social label{
     display: inline-block;
     margin-top: 1%;
     vertical-align: top;
