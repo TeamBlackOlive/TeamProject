@@ -71,7 +71,55 @@ div#list{
 }
 
 @media (min-width: 320px) and (max-width: 479px){
+    hr{
+        visibility: hidden;
+    }
 
+    .team{
+        position: relative !important;
+        display: block;
+        margin-top: 1% !important;
+    }
+
+    .members-left.members-right{
+        display: block;
+
+    }
+
+    .innerSection{
+        width: 83% !important;
+    }
+
+    .innerSection header{
+        margin-top: -5% !important;
+    }
+
+    #about article{
+        margin-left: 2%;
+    }
+
+    .social{
+        display: block;
+        width: 100%;
+        margin-left: 30% !important;
+    }
+
+    .social a{
+        margin-right: 10% !important;
+    }
+
+    .social-text{
+       display: none !important;
+    }
+
+    .social img.btnFacebook, .social img.btnSoftUni, .social img.btnGitHub{
+        width: 6vmin !important;
+        height: 6vmin !important;
+    }
+
+    #about aside{
+        display: none;
+    }
 }
 .clearfix{
     height: 70px;
@@ -260,30 +308,21 @@ section{
     min-height: 0;
 }
 
-#leftLine{
-    width: 38%;
-    float: left;
-    border-color: #183046;
-    margin-top: 5%;
-}
-
-#rightLine{
-    width: 38%;
-    display: inline-block;
-    border-color: #183046;
-    float: right;
+hr{
+    border-color: #1e3f5b;
     margin-top: 5%;
 }
 
 .team{
+    position: absolute;
     display: inline-block;
     color: white;
     background: #183046;
     border: 2px solid #000000;
     border-radius: 30px;
     padding: 0 3%;
-    margin-top: 2.3%;
-    margin-left: 1.5%;
+    margin-top: -2.5%;
+    margin-left: 30%;
 }
 
 .members-right, .members-left{
@@ -359,7 +398,6 @@ section .members-left footer{
     width: 65%;
     margin: 3% 0 5% 20%;
 }
-
 
 .social a{
     color: #000000;
