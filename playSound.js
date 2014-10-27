@@ -210,3 +210,59 @@ function stopScores() {
     helloSound.currentTime = 0;
 
 }
+
+function playMachine() {
+    var helloSound = document.getElementById("machine");
+    helloSound.pause();
+    helloSound.load();
+    helloSound.play();
+}
+
+function stopMachine() {
+    var helloSound = document.getElementById("machine");
+    helloSound.pause();
+    helloSound.currentTime = 0;
+
+}
+
+function playWolverine() {
+    var helloSound = document.getElementById("wolverine");
+    helloSound.pause();
+    helloSound.load();
+    helloSound.play();
+}
+
+function stopWolverine() {
+    var helloSound = document.getElementById("wolverine");
+    helloSound.pause();
+    helloSound.currentTime = 0;
+
+}
+function playJungle() {
+    var helloSound = document.getElementById("jungle");
+    helloSound.pause();
+    helloSound.load();
+    helloSound.play();
+}
+
+function stopJungle() {
+    var helloSound = document.getElementById("jungle");
+    helloSound.pause();
+    helloSound.currentTime = 0;
+
+}
+
+function playKombat() {
+    var helloSound = document.getElementById("kombat");
+    helloSound.pause();
+    helloSound.load();
+    helloSound.play();
+}
+
+function stopKombat() {
+    var helloSound = document.getElementById("kombat");
+    helloSound.pause();
+    helloSound.currentTime = 0;
+
+}
+
