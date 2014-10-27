@@ -218,5 +218,51 @@ function nakovScoresDislikesClick() {
     document.getElementById("nakovScoresDislikes").innerHTML = nakovScoresDislikesCount;
 }
 
+var machineLikesCount = 0;
+function machineLikesClick() {
+    machineLikesCount += 1;
+    document.getElementById("machineLikes").innerHTML = machineLikesCount;
+}
+var machineDislikesCount = 0;
+function machineDislikesClick() {
+    machineDislikesCount += 1;
+    document.getElementById("machineDislikes").innerHTML = machineDislikesCount;
+}
+
+var wolverineLikesCount = 0;
+function wolverineLikesClick() {
+    wolverineLikesCount += 1;
+    document.getElementById("wolverineLikes").innerHTML = wolverineLikesCount;
+}
+var wolverineDislikesCount = 0;
+function wolverineDislikesClick() {
+    wolverineDislikesCount += 1;
+    document.getElementById("wolverineDislikes").innerHTML = wolverineDislikesCount;
+}
+
+var jungleLikesCount = 0;
+function jungleLikesClick() {
+    jungleLikesCount += 1;
+    document.getElementById("jungleLikes").innerHTML = jungleLikesCount;
+}
+var jungleDislikesCount = 0;
+function jungleDislikesClick() {
+    jungleDislikesCount += 1;
+    document.getElementById("jungleDislikes").innerHTML = jungleDislikesCount;
+}
+
+var kombatLikesCount = 0;
+function kombatLikesClick() {
+    kombatLikesCount += 1;
+    document.getElementById("kombatLikes").innerHTML = kombatLikesCount;
+}
+var kombatDislikesCount = 0;
+function kombatDislikesClick() {
+    kombatDislikesCount += 1;
+    document.getElementById("kombatDislikes").innerHTML = kombatDislikesCount;
+}
+
+
+
 
 
