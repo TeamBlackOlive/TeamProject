@@ -209,6 +209,8 @@ div#list{
             display: block;
             line-height: 22px;
             font-size: .9em;
+            padding-left: 4%;
+            border-bottom: 1px solid #767676;
         }
 
         ul#menu li {
@@ -218,8 +220,6 @@ div#list{
 
         ul#menu li a:hover{
             font-weight: bold;
-            /*text-decoration: underline;*/
-            /*border-bottom: 1px solid white;*/
             color: #979797 !important;
         }
 
@@ -227,7 +227,7 @@ div#list{
         ul#menu li ul.sub-menu {
             display: none;
             position: absolute;
-            left: -50px;
+            left: -53px;
             border-top-color: #FFF;
             margin-top: -33px;
             width: 240px;
@@ -241,7 +241,9 @@ div#list{
         ul#menu li:hover ul.sub-menu a:hover {
             text-decoration: none;
             border: none;
+            border-bottom: 1px solid #767676 !important;
         }
+
         /* End of Menu */
 
 /*END OF NAVITAGTION*/
