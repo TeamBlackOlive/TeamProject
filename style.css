@@ -205,6 +205,12 @@ div#list{
             margin-left: 20px;
         }
 
+        ul#menu li ul.sub-menu li a{
+            display: block;
+            line-height: 22px;
+            font-size: .9em;
+        }
+
         ul#menu li {
             display: inline;
             position: relative;
@@ -224,7 +230,7 @@ div#list{
             left: -50px;
             border-top-color: #FFF;
             margin-top: -33px;
-            width: 100%;
+            width: 240px;
             padding: 49px;
             font-size: 1.2rem;
             z-index: 5;
