@@ -57,13 +57,22 @@ div#list{
             list-style: none;
         }
 
-@media (max-width: 1080px) {
+
+@media screen and (min-width: 1024px) and (max-width: 1600px){
+
+}
+
+@media screen and (min-width: 960px) and (max-width: 1023px) {
     .wrapper {
         width: 100%;
     }
 }
 
-@media screen and (min-width: 640px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 959px){
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
     div.nav-items{
         display:none;
     }
@@ -88,6 +97,41 @@ div#list{
     #close{
         left: 90%;
     }
+
+    /*form*/
+
+    form {
+        margin: 10% auto !important;
+        width: 58% !important;
+        padding: 3% !important;
+    }
+
+    .formHeading{
+        margin-bottom: 4% !important;
+    }
+
+    .feedbackForm label{
+        font-size: 1.1em !important;
+    }
+
+    input {
+        height: 23px !important;
+        margin-top: 1%;
+        margin-bottom: 5% !important;
+    }
+
+    textarea {
+        height: 65px !important;
+    }
+
+    .inputButton{
+        margin: 8% 0 1% 33% !important;
+        width: 35% !important;
+        height: 27px !important;
+        font-size: .8em;
+    }
+
+    /*end of form*/
 
     /*post*/
 
@@ -147,6 +191,68 @@ div#list{
     }
 
     /*end of post*/
+
+    /*about*/
+
+    hr{
+        visibility: hidden;
+    }
+
+    .team{
+        position: relative !important;
+        display: block;
+        margin-top: 0 !important;
+        margin-bottom: 2%;
+    }
+
+    .members-left.members-right{
+        display: block;
+    }
+
+    .innerSection{
+        width: 90% !important;
+        margin-left: 4% !important;
+    }
+
+    .innerSection header{
+        margin-top: -5% !important;
+    }
+
+    #about article{
+        margin-left: 2%;
+    }
+
+    .social{
+        display: block;
+        width: 100%;
+        margin-left: 28% !important;
+        margin-top: 4% !important;
+    }
+
+    .social a{
+        margin-right: 10% !important;
+    }
+
+    .social-text{
+        display: none !important;
+    }
+
+    .social img.btnFacebook, .social img.btnSoftUni, .social img.btnGitHub{
+        width: 5vmin !important;
+        height: 5vmin !important;
+    }
+
+    #about aside{
+        display: none;
+    }
+
+    .hidden-img{
+        display: none;
+    }
+
+
+
+    /*end of about*/
 }
 
 @media screen and (min-width: 320px) and (max-width: 479px){
@@ -219,6 +325,10 @@ div#list{
     #about aside{
         display: none;
     }
+
+    .hidden-img{
+        display: none;
+    }
     /*end of about*/
 
     /*form*/
@@ -248,7 +358,7 @@ div#list{
     }
 
     .inputButton{
-        margin: 8% 0 1% 35% !important;
+        margin: 8% 0 1% 33% !important;
         width: 35% !important;
         height: 27px !important;
         font-size: .8em;
@@ -628,6 +738,10 @@ section .members-left footer{
     display: inline-block;
     margin-top: 1%;
     vertical-align: top;
+}
+
+.hidden-img{
+    display: none;
 }
 
 /*End of about*/
