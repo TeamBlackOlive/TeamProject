@@ -7,23 +7,24 @@
     <title>SoftGag-Project</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script>
-        $(document).ready(function(){
-                $("#list").hide();
+        $(document).ready(function () {
+            $("#list").hide();
 
-            $("#hiddenMenu").click(function(){
+            $("#hiddenMenu").click(function () {
                 $("#list").show();
             });
 
-            $("#close").click(function(){
+            $("#close").click(function () {
                 $("#list").hide();
             });
         });
     </script>
+    <script type="text/javascript" src="votesCount.js"></script>
 </head>
 <body>
 <div class="container">
-<div class="clearfix">
-    <div class="wrapper">
+    <div class="clearfix">
+        <div class="wrapper">
             <header>
                 <nav id="main-nav">
                     <div class="logo"><img src="imgs/logo.png" alt="SoftGag"/></div>
@@ -57,95 +58,127 @@
                         </ul>
                     </div>
                     <div class="hidden-menu">
-                        <img id="hiddenMenu"  src="imgs/menu-icon.png" width="20px" height="20px" alt=""/>
-                        </div>
-                        <div id="list">
-                                <ul id="menu2">
+                        <img id="hiddenMenu" src="imgs/menu-icon.png" width="20px" height="20px" alt=""/>
+                    </div>
+                    <div id="list">
+                        <ul id="menu2">
+                            <li>
+                                <a href="index.html">HOME</a>
+                            </li>
+                            <li><a href="#">SOFTUNI TEAM</a>
+                                <ul class="sub-menu">
                                     <li>
-                                        <a href="index.html">HOME</a>
-                                    </li>
-                                    <li><a href="#">SOFTUNI TEAM</a>
-                                        <ul class="sub-menu">
-                                            <li>
-                                                <a href="nakov.html">SVETLIN NAKOV</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">DEYAN DACHEV</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">VLADI STOYANOV</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">ANGEL GEORGIEV</a>
-                                            </li>
-                                        </ul>
+                                        <a href="nakov.html">SVETLIN NAKOV</a>
                                     </li>
                                     <li>
-                                        <a href="about.html">ABOUT US</a>
+                                        <a href="deyan.html">DEYAN DACHEV</a>
                                     </li>
                                     <li>
-                                        <a href="feedback.html">FEEDBACK</a>
+                                        <a href="#">VLADI STOYANOV</a>
+                                    </li>
+                                    <li>
+                                        <a href="angel.html">ANGEL GEORGIEV</a>
                                     </li>
                                 </ul>
-                            <img id="close" src="imgs/cross.png" alt="close"/>
-                        </div>
+                            </li>
+                            <li>
+                                <a href="about.html">ABOUT US</a>
+                            </li>
+                            <li>
+                                <a href="feedback.html">FEEDBACK</a>
+                            </li>
+                        </ul>
+                        <img id="close" src="imgs/cross.png" alt="close"/>
+                    </div>
 
                 </nav>
             </header>
-        <section>
-            <div class="post">
-                <div class="image">
-                    <img src="imgs/nakov%20joker.jpg" alt="IMAGE"/>
-                </div><!-- End of div Image-->
-                <div class="sidebar">
-                    <span class="post-title">Why so serious students...?</span>
-                    <p>Rate:</p>
-                    <div class="votes">
-                        <img src="imgs/up.png" alt=""/>
-                        <img src="imgs/down.png" alt=""/>
+            <section>
+                <div class="post">
+                    <div class="image">
+                        <img src="imgs/nakov%20joker.jpg" alt="IMAGE"/>
                     </div>
-                    <div class="comment">
-                        <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
-                    </div>
-                </div><!-- End of div sidebar-->
-            </div><!-- End of div Post-->
-            <!--next GAG-->
-            <div class="post">
-                <div class="image">
-                    <img src="imgs/nakov%20joker.jpg" alt="IMAGE"/>
-                </div><!-- End of div Image-->
-                <div class="sidebar">
-                    <span class="post-title">Why so serious students...?</span>
-                    <p>Rate this GAG</p>
-                    <div class="votes">
-                        <img src="imgs/check.png" alt=""/>
-                        <img src="imgs/cross.png" alt=""/>
-                    </div>
-                    <div class="comment">
-                        <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
-                    </div>
-                </div><!-- End of div sidebar-->
-            </div><!-- End of div Post-->
+                    <!-- End of div Image-->
+                    <div class="sidebar">
+                        <span class="post-title">Why so serious students...?</span>
 
-        </section>
-    </div>
-    <footer id="buttom-footer">
-        <div class="copyright">
-            <p>Copyright© bullshit. Softuni PranK Website</p>
-            <!--CSS and HTML5 validation banners-->
+                        <p>Rate this GAG</p>
+
+                        <div class="votes">
+
+                            <div class="vote-text">
+                                <p>Likes <a id="pict1Likes">0</a></p>
+                                <p>Dislikes <a id="pic1Dislikes">0</a></p>
+                            </div>
+
+                            <div class="vote-img">
+                                <img src="imgs/check.png" alt="" onClick="pic1LikesClick()">
+                                <img src="imgs/cross.png" alt="" onClick="pic1DislikesClick()"/>
+                            </div>
+                        </div>
+
+                            <div class="comment">
+                                <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <!-- End of div sidebar-->
+                    </div>
+                    <!-- End of div Post-->
+                    <!--next GAG-->
+                    <div class="post">
+                        <div class="image">
+                            <img src="imgs/nakov%20joker.jpg" alt="IMAGE"/>
+                        </div>
+                        <!-- End of div Image-->
+                        <div class="sidebar">
+                            <span class="post-title">Why so serious students...?</span>
+
+                            <p>Rate this GAG</p>
+
+                            <div class="votes">
+
+                                <div class="vote-text">
+                                    <p>Likes <a id="pict2Likes">0</a></p>
+                                    <p>Dislikes <a id="pic2Dislikes">0</a></p>
+                                </div>
+
+                                <div class="vote-img">
+                                    <img src="imgs/check.png" alt="" onClick="pic2LikesClick()">
+                                    <img src="imgs/cross.png" alt="" onClick="pic2DislikesClick()"/>
+                                </div>
+                            </div>
+
+                            <div class="comment">
+                                <textarea name="comment-gag" class="comment-gag" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <!-- End of div sidebar-->
+                    </div>
+                    <!-- End of div Post-->
+
+            </section>
+        </div>
+        <footer id="buttom-footer">
+            <div class="copyright">
+                <p>Copyright© bullshit. Softuni PranK Website</p>
+                <!--CSS and HTML5 validation banners-->
                 <a href="http://css-validator.org/check/referer">
                     <img src="http://css-validator.org/images/vcss.png"
-                         alt="Valid CSS!" />
+                         alt="Valid CSS!"/>
                 </a>
                 <a href="http://validator.w3.org/">
-                    <img src="http://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML5!">
+                    <img src="http://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png"
+                         alt="Valid HTML5!">
                 </a>
-            <img src="imgs/worksHere.png" alt="Works here"/>
-            <!--End of CSS and HTML5 validation banners-->
+                <img src="imgs/worksHere.png" alt="Works here"/>
+                <!--End of CSS and HTML5 validation banners-->
 
-        </div><!-- End of div Wrapper-->
-    </footer>
-</div><!-- End of div Clearfix-->
-</div><!-- End of div Container-->
+            </div>
+            <!-- End of div Wrapper-->
+        </footer>
+    </div>
+    <!-- End of div Clearfix-->
+</div>
+<!-- End of div Container-->
 </body>
 </html>

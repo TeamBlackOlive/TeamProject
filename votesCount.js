@@ -1,3 +1,27 @@
+var pic1LikesCount = 0;
+function pic1LikesClick() {
+    pic1LikesCount += 1;
+    document.getElementById("pict1Likes").innerHTML = pic1LikesCount;
+}
+
+var pic1DislikeCount = 0;
+function pic1DislikesClick() {
+    pic1DislikeCount += 1;
+    document.getElementById("pic1Dislikes").innerHTML = pic1DislikeCount;
+}
+
+var pic2LikesCount = 0;
+function pic2LikesClick() {
+    pic2LikesCount += 1;
+    document.getElementById("pict2Likes").innerHTML = pic2LikesCount;
+}
+
+var pic2DislikeCount = 0;
+function pic2DislikesClick() {
+    pic2DislikeCount += 1;
+    document.getElementById("pic2Dislikes").innerHTML = pic2DislikeCount;
+}
+
 var cSharpLikesCount = 0;
 function cSharpLikesClick() {
     cSharpLikesCount += 1;
