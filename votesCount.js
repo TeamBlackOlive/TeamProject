@@ -1,3 +1,41 @@
+var cSharpLikesCount = 0;
+function cSharpLikesClick() {
+    cSharpLikesCount += 1;
+    document.getElementById("cSharpLikes").innerHTML = cSharpLikesCount;
+}
+
+var cSharpDislikeCount = 0;
+function cSharpDislikesClick() {
+    cSharpDislikeCount += 1;
+    document.getElementById("cSharpDislikes").innerHTML = cSharpDislikeCount;
+}
+
+var beardLikesCount = 0;
+function beardLikesClick() {
+    beardLikesCount += 1;
+    document.getElementById("beardLikes").innerHTML = beardLikesCount;
+}
+
+var beardDislikeCount = 0;
+function beardDislikesClick() {
+    beardDislikeCount += 1;
+    document.getElementById("beardDislikes").innerHTML = beardDislikeCount;
+}
+
+var loveLikesCount = 0;
+function loveLikesClick() {
+    loveLikesCount += 1;
+    document.getElementById("loveLikes").innerHTML = loveLikesCount;
+}
+
+var loveDislikeCount = 0;
+function loveDislikesClick() {
+    loveDislikeCount += 1;
+    document.getElementById("loveDislikes").innerHTML = loveDislikeCount;
+}
+
+
+
 var likesCount = 0;
 function likesClick() {
     likesCount += 1;
