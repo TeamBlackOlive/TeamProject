@@ -1,7 +1,7 @@
 var pic1LikesCount = 0;
 function pic1LikesClick() {
     pic1LikesCount += 1;
-    document.getElementById("pict1Likes").innerHTML = pic1LikesCount;
+    document.getElementById("pic1Likes").innerHTML = pic1LikesCount;
 }
 
 var pic1DislikeCount = 0;
@@ -13,13 +13,49 @@ function pic1DislikesClick() {
 var pic2LikesCount = 0;
 function pic2LikesClick() {
     pic2LikesCount += 1;
-    document.getElementById("pict2Likes").innerHTML = pic2LikesCount;
+    document.getElementById("pic2Likes").innerHTML = pic2LikesCount;
 }
 
-var pic2DislikeCount = 0;
+var pic2DislikesCount = 0;
 function pic2DislikesClick() {
-    pic2DislikeCount += 1;
-    document.getElementById("pic2Dislikes").innerHTML = pic2DislikeCount;
+    pic2DislikesCount += 1;
+    document.getElementById("pic2Dislikes").innerHTML = pic2DislikesCount;
+}
+
+var pic3LikesCount = 0;
+function pic3LikesClick() {
+    pic3LikesCount += 1;
+    document.getElementById("pic3Likes").innerHTML = pic3LikesCount;
+}
+
+var pic3DislikeCount = 0;
+function pic3DislikesClick() {
+    pic3DislikeCount += 1;
+    document.getElementById("pic3Dislikes").innerHTML = pic3DislikeCount;
+}
+
+var pic4LikesCount = 0;
+function pic4LikesClick() {
+    pic4LikesCount += 1;
+    document.getElementById("pic4Likes").innerHTML = pic4LikesCount;
+}
+
+var pic4DislikeCount = 0;
+function pic4DislikesClick() {
+    pic4DislikeCount += 1;
+    document.getElementById("pic4Dislikes").innerHTML = pic4DislikeCount;
+}
+
+var pic5LikesCount = 0;
+function pic5LikesClick() {
+    pic5LikesCount += 1;
+    document.getElementById("pic5Likes").innerHTML = pic5LikesCount;
+}
+
+var pic5DislikeCount = 0;
+function pic5DislikesClick() {
+    pic5DislikeCount += 1;
+    document.getElementById("pic5Dislikes").innerHTML = pic5DislikeCount;
 }
 
 var cSharpLikesCount = 0;
@@ -308,6 +344,47 @@ function talkDislikesClick() {
     talkDislikesCount += 1;
     document.getElementById("talkDislikes").innerHTML = talkDislikesCount;
 }
+
+var spartaLikesCount = 0;
+function spartaLikesClick() {
+    spartaLikesCount += 1;
+    document.getElementById("spartaLikes").innerHTML = spartaLikesCount;
+}
+var spartaDislikesCount = 0;
+function spartaDislikesClick() {
+    spartaDislikesCount += 1;
+    document.getElementById("spartaDislikes").innerHTML = spartaDislikesCount;
+}
+
+
+var errorLikesCount = 0;
+function errorLikesClick() {
+    errorLikesCount += 1;
+    document.getElementById("errorLikes").innerHTML = errorLikesCount;
+}
+var errorDislikesCount = 0;
+function errorDislikesClick() {
+    errorDislikesCount += 1;
+    document.getElementById("errorDislikes").innerHTML = errorDislikesCount;
+}
+
+
+var girlLikesCount = 0;
+function girlLikesClick() {
+    girlLikesCount += 1;
+    document.getElementById("girlLikes").innerHTML = girlLikesCount;
+}
+var girlDislikesCount = 0;
+function girlDislikesClick() {
+    girlDislikesCount += 1;
+    document.getElementById("girlDislikes").innerHTML = girlDislikesCount;
+}
+
+
+
+
+
+
 
 
 

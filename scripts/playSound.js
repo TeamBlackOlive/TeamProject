@@ -295,5 +295,20 @@ function stopTalk() {
 }
 
 
+function playSparta() {
+    var helloSound = document.getElementById("sparta");
+    helloSound.pause();
+    helloSound.load();
+    helloSound.play();
+}
+
+function stopSparta() {
+    var helloSound = document.getElementById("sparta");
+    helloSound.pause();
+    helloSound.currentTime = 0;
+
+}
+
+
 
 
