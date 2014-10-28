@@ -280,3 +280,20 @@ function stopPassword() {
 
 }
 
+function playTalk() {
+    var helloSound = document.getElementById("talk");
+    helloSound.pause();
+    helloSound.load();
+    helloSound.play();
+}
+
+function stopTalk() {
+    var helloSound = document.getElementById("talk");
+    helloSound.pause();
+    helloSound.currentTime = 0;
+
+}
+
+
+
+

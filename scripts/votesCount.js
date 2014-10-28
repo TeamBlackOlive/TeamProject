@@ -298,6 +298,20 @@ function passwordDislikesClick() {
 }
 
 
+var talkLikesCount = 0;
+function talkLikesClick() {
+    talkLikesCount += 1;
+    document.getElementById("talkLikes").innerHTML = talkLikesCount;
+}
+var talkDislikesCount = 0;
+function talkDislikesClick() {
+    talkDislikesCount += 1;
+    document.getElementById("talkDislikes").innerHTML = talkDislikesCount;
+}
+
+
+
+
 
 
 
