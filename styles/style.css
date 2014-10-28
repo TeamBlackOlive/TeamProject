@@ -465,7 +465,7 @@ input {
     border: 1px solid #999;
     height: 25px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-    color: white;
+    color: #000000;
     transition: height .7s ease-in-out;
 }
 
@@ -476,7 +476,7 @@ textarea {
     display: block;
     border: 1px solid #999;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-    color: white;
+    color: black;
     transition: height .7s ease-in-out;
 }
 
