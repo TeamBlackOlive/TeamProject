@@ -75,7 +75,7 @@ FreezeFrame = (function($) {
 			this.animation_icon_image = _options.animation_icon_image;
 
 		_options.animation_icon_position == null ? 
-			this.animation_icon_position = "top left" :
+			this.animation_icon_position = "center center" :
 			this.animation_icon_position = _options.animation_icon_position.toLowerCase();
 
 		_options.loading_fade_in_speed == null ? 
